@@ -7,7 +7,7 @@ Accurate stock price prediction is severely hindered by the extreme non-stationa
 
 ## Baseline Work Description
 
-This project is developed and optimized on the basis of the open -source VMD -MFRFNN stock prediction method . The original baseline work implements a multi -step stock price prediction framework combining variational mode decomposition  (VMD ) and multi -functional recurrent fuzzy neural network  (MFRFNN ), which verifies the effectiveness of decomposition -fusion fuzzy forecasting in financial time series tasks .
+This project is developed and optimized on the basis of the open source VMD-MFRFNN stock prediction method . The original baseline work implements a multi -step stock price prediction framework combining variational mode decomposition (VMD) and multi-functional recurrent fuzzy neural network (MFRFNN ), which verifies the effectiveness of decomposition -fusion fuzzy forecasting in financial time series tasks .
 
 **Original Baseline Paper**
 
