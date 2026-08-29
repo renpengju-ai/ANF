@@ -22,10 +22,10 @@ global targetOutput;
 
 
 %% Load HSI Benchmark
-fprintf("Loading SSE Index Dataset...\n");
+fprintf("Loading HSI Index Dataset...\n");
 maxNumberOfIMFS = 15; % 增加上限以便更灵活地确定最佳K值
 TargetDimension = 1;
-load('Benchmarks\\SSE_Index.mat');
+load('Benchmarks\\HSI_Index.mat');
 % Test Data
 testOutputTemp = data(end-375:end,TargetDimension);
 
