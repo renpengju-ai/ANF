@@ -1,16 +1,16 @@
-# VMD-MFRFNN
+# ANF
 
 ## Introduction
 
-**Multi-step-ahead stock price prediction using recurrent fuzzy neural network and variational mode decomposition**
 
-*Authors:* [Hamid Nasiri](https://www.linkedin.com/in/hamid-nasiri-b5555487/), [Mohammad Mehdi Ebadzadeh](https://www.linkedin.com/in/mehdi-ebadzadeh-28bb3b35/)
+*Authors:* [ren pengju]([https://www.linkedin.com/in/hamid-nasiri-b5555487]
 
-*Abstract:* Financial time series prediction has attracted considerable interest from scholars, and several approaches have been developed. Among them, decomposition-based methods have achieved promising results. Most decomposition-based methods approximate a single function, which is insufficient for obtaining accurate results. Moreover, most existing research has concentrated on one-step-ahead forecasting that prevents market investors from making the best decisions for the future. This study proposes two novel multi-step-ahead stock price prediction methods based on different decomposition techniques, including discrete cosine transform (DCT), i.e., a linear transform, and variational mode decomposition (VMD), i.e., a non-linear transform. DCT-MFRFNN, a method based on DCT and multi-functional recurrent fuzzy neural network (MFRFNN), uses DCT to reduce fluctuations in the time series and simplify its structure and MFRFNN to predict the stock price. VMD-MFRFNN, an approach based on VMD and MFRFNN, brings together their advantages. VMD-MFRFNN consists of two phases. The input signal is decomposed to several intrinsic mode functions (IMFs) using VMD in the decomposition phase. In the prediction phase, each IMF is given to a separate MFRFNN for prediction, and predicted signals are summed to reconstruct the output. DCT-MFRFNN and VMD-MFRFNN use the particle swarm optimization (PSO) algorithm to train MFRFNN. In this research, for the first time, the gradient descent method is used to train MFRFNN. Three financial time series are used to evaluate the proposed methods. Experimental results indicate that VMD-MFRFNN surpasses other state-of-the-art methods. VMD-MFRFNN, on average, shows a decrease of 31.8% in RMSE compared to the MEMD-LSTM method. Also, DCT-MFRFNN outperforms MFRFNN and DCT-LSTM in all experiments, which reveals the favorable effect of DCT on MFRFNN’s performance. To assess the effectiveness of PSO in training VMD-MFRFNN, we compared its performance with twelve different metaheuristic approaches. PSO, on average, shows a decrease of 9.4% in MAPE compared to other metaheuristic methods.
+*Abstract:* Financial markets play a crucial role in capital allocation and risk diversification in the modern economy. However, financial time series inherently exhibit extreme volatility, non-stationarity, and complex regime-switching characteristics. Existing mainstream deep learning models, such as long short-term memory networks and self-attention architectures, generally tend to construct global static mappings, making it difficult to explicitly characterize the dynamic patterns of frequent market regime transitions, and they lack the semantic transparency essential for quantitative decision-making. Furthermore, the prevalent decomposition-prediction hybrid modeling paradigm still faces several limitations. In univariate forecasting, signal decomposition techniques heavily rely on subjective experience for parameter setting, and complex neuro-fuzzy systems are prone to premature convergence when optimizing in high-dimensional non-convex state spaces. Independent decomposition of multi-dimensional volume-price heterogeneous data easily triggers the mode misalignment dilemma, while direct homogeneous concatenation of high-dimensional features inevitably leads to the severe curse of dimensionality.
+To address the aforementioned technical bottlenecks, this thesis constructs a multi-stage quantitative forecasting framework encompassing underlying feature decoupling, high-dimensional parameter adaptive optimization, and multi-scale collaborative inference, proposing two adaptive neuro-fuzzy prediction algorithmic models respectively. The main innovative contributions are as follows:
+1. An adaptive univariate prediction model based on adaptive feature decoupling and neuro-fuzzy inference is proposed. Addressing the strong non-stationarity of univariate time series, a univariate adaptive decoupling strategy is constructed, achieving automatic data-driven selection of optimal decomposition parameters through a multi-criteria mode determination mechanism. Second, an Enhanced Aquila Optimizer (EAO) integrating dual dynamic scheduling strategies is developed. Through iteration-driven linear scheduling and population diversity response feedback mechanisms, the premature convergence problem in complex model optimization is successfully resolved. Finally, a heuristic state optimization mechanism is designed for the Multi-Functional Recurrent Fuzzy Neural Network (MFRFNN) to better capture market state features. Experimental results show that this univariate model significantly outperforms traditional deep learning baseline architectures in prediction accuracy, achieving a substantial average reduction of approximately 74.7% in root mean square error (RMSE).
 
 This repository contains MATLAB source code of the following paper:
-
-[Multi-step-ahead stock price prediction using recurrent fuzzy neural network and variational mode decomposition](https://www.sciencedirect.com/science/article/abs/pii/S1568494623008852)
+([https://www.sciencedirect.com/science/article/abs/pii/S1568494623008852](https://scholar.google.com/scholar?q=An+Adaptive+Neuro-fuzzy+Framework+for+Stock+Price+Forecasting.))
 
 ## Source Code and Dataset
 
@@ -23,22 +23,7 @@ The [`Benchmarks`](Benchmarks/) folder contains three financial time series data
 + `SSE_Index.mat` corresponds to the SSE time series.
 + `SandP_Index.mat` corresponds to the SPX time series.
 
-## Citation
 
-This repository accompanies the paper ["Multi-step-ahead stock price prediction using recurrent fuzzy neural network and variationa"](https://www.sciencedirect.com/science/article/abs/pii/S1568494623008852) by [Hamid Nasiri](https://www.linkedin.com/in/hamid-nasiri-b5555487/) and [Mohammad Mehdi Ebadzadeh](https://www.linkedin.com/in/mehdi-ebadzadeh-28bb3b35/), published in Applied Soft Computing journal.
-
-If you use either the code, datasets or paper, please consider citing the paper.
-
-```
-@article{nasiri2023multi,
-  title={Multi-step-ahead stock price prediction using recurrent fuzzy neural network and variational mode decomposition},
-  author={Nasiri, Hamid and Ebadzadeh, Mohammad Mehdi},
-  journal={Applied Soft Computing},
-  pages={110867},
-  year={2023},
-  publisher={Elsevier}
-}
-```
 
 ## Contact Me
 
