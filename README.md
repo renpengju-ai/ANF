@@ -1,5 +1,3 @@
-# README .md
-
 # An Adaptive Neuro-fuzzy Framework for Stock Price Forecasting
 
 This repository is the **improved and extended version** based on the existing VMD-MFRFNN stock forecasting framework. It corresponds to the ICIC 2026 conference paper published in *Lecture Notes in Computer Science (LNCS 16648)*.
