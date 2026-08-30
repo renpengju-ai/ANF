@@ -48,17 +48,8 @@ If you find this repository or framework helpful in your research, please cite o
 }
 ```
 
-## Acknowledgements& References
+## Acknowledgements
 
 This implementation builds upon concepts from decomposition-based fuzzy neural frameworks. We gratefully acknowledge the foundational open-source contributions of Nasiri & Ebadzadeh (2023):
-
-```Plain Text
-@article{nasiri2023multi,
-  title   = {Multi-step-ahead stock price prediction using recurrent fuzzy neural network and variational mode decomposition},
-  author  = {Nasiri, Hamid and Ebadzadeh, Mohammad Mehdi},
-  journal = {Applied Soft Computing},
-  pages   = {110867},
-  year    = {2023}
-}
-```
+- [VMD-MFRFNN](https://github.com/Hamid-Nasiri/VMD-MFRFNN) 
 
