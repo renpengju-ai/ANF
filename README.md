@@ -33,7 +33,7 @@ All experimental datasets are placed in the `Benchmarks` folder, covering three 
 
 ## Citation
 
-If you find this repository or framework helpful in your research, please cite our paper::
+If you find this repository or framework helpful in your research, please cite our paper:
 
 
 ```Plain Text
